@@ -2,17 +2,19 @@
 class student
 {
 public $name;
-private $age;
-function addname($n)
+public function addname($n)
 {
 	$this->name=$n;
 }
-function getname($n)
+public function getname()
 {
 	return $this->name;
 }
-$obj=new student();
-$obj.name("arun Vijay");
-obj.getname();
 }
+$obj = new student();
+$obj->addname("arun Vijay");
+echo $obj->getname();
+
+
+
 ?>
