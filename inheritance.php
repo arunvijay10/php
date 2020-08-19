@@ -11,7 +11,7 @@ class  students{
 
 function __construct()
 {
-        echo "name this as a contstructor";
+        echo "name this as a contstructor\n";
 }
 
 }
