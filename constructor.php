@@ -4,6 +4,11 @@ class constructing
     public $house;
     public $colour;
 
+    function __construct()
+    {
+        echo "Constructing A House\n";
+    }
+
     public function price($p)
     {
         echo "what is the investment you want to invest";
@@ -25,9 +30,36 @@ class constructing
         echo $this->colour;
     }
 }
+
+class extra extends constructing
+{
+    public $execute;
+    
+    function __construct()
+    {
+        parent::__construct();
+        echo"\nfully gonna build\n";
+    }
+
+    public function executes()
+    {
+    echo "\nyour house is Ready\n";   
+    }
+}
+
+
+
+
+
+
+
+
 $obj =new constructing();
 $obj->price("145 Lakh");
 $obj->colour("Wife choice");
 echo $obj->priceseeing();
 echo $obj->wifechoice();
+
+$ex =new extra();
+echo $ex->executes();
 ?>
